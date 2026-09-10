@@ -62,7 +62,7 @@ export const caseStudies = [
   {
     title: "Play TV",
     description:
-      "Facilitando a escolha da creche ideal para cada família.",
+      "Repensando a descoberta e o consumo de conteúdo digital.",
     tags: ["Research", "UX/UI", "Prototype"],
     image: "/images/playtv-cover.png",
   },
