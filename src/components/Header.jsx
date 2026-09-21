@@ -8,12 +8,24 @@ const links = [
   { label: "Contato", href: "#contact", id: "contact" },
 ];
 
+const roles = ["UX/UI Designer", "Product Designer", "Design Systems"];
+
 function Header() {
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
   const isNavigating = useRef(false);
   const scrollEndTimer = useRef(null);
+
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex((current) => (current + 1) % roles.length);
+    }, 2800);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const detectSection = () => {
     const work = document.getElementById("work");
@@ -133,7 +145,10 @@ function Header() {
 
           <div className="brand-info">
             <strong>Jailton Lima</strong>
-            <span>UX/UI Designer</span>
+
+            <div className="brand-role">
+              <span key={roles[roleIndex]}>{roles[roleIndex]}</span>
+            </div>
           </div>
         </a>
 

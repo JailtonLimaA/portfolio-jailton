@@ -18,27 +18,28 @@ export const projects = [
     id: 1,
     title: "Exmed",
     description:
-      "Simplificando jornadas digitais de saúde através de experiências mais claras, acessíveis e eficientes.",
-    tags: ["Product Design", "UX/UI", "App", "Web"],
+      "Evolução da experiência de uma plataforma de saúde, simplificando jornadas de contratação, atendimento e gestão para clientes e prestadores.",
+    tags: ["Product Design", "UX/UI", "Design System", "Web & App"],
     image: "/images/exmed-cover.png",
+    link: "/em-construcao",
   },
-
   {
     id: 2,
     title: "Excelsior Seguros",
     description:
-      "Simplificando produtos e processos complexos de seguros através de interfaces mais intuitivas.",
+      "Transformando jornadas complexas de seguros em experiências digitais mais claras e eficientes.",
     tags: ["Product Design", "UX/UI", "Design System", "Seguros"],
     image: "/images/excelsior-cover.png",
+    link: "/em-construcao",
   },
-
   {
     id: 3,
     title: "Jofi",
     description:
-      "Uma experiência mais simples para contratar e gerenciar planos de saúde e proteção para pets.",
-    tags: ["Product Design", "UX/UI", "Web", "App"],
+      "Simplificando a jornada de contratação e gestão de planos de saúde e proteção para pets.",
+    tags: ["Product Design", "UX/UI", "Web & App", "Pet Health"],
     image: "/images/jofi-cover.png",
+    link: "/em-construcao",
   },
 ];
 
@@ -49,7 +50,6 @@ export const designSystems = [
       "Design System criado para apoiar consistência, escalabilidade e eficiência entre produtos.",
     image: "/images/excalibur-cover.png",
   },
-
   {
     title: "Dexter",
     description:
@@ -62,17 +62,18 @@ export const caseStudies = [
   {
     title: "Play TV",
     description:
-      "Repensando a descoberta e o consumo de conteúdo digital.",
+      "Repensando a experiência de descoberta e consumo de conteúdo em uma plataforma de streaming.",
     tags: ["Research", "UX/UI", "Prototype"],
     image: "/images/playtv-cover.png",
+    link: "/em-construcao",
   },
-
   {
     title: "Bê",
     description:
-      "Repensando a descoberta e a escolha de creches através de uma experiência mais clara.",
+      "Simplificando a descoberta, comparação e escolha de creches por meio de uma experiência mais personalizada.",
     tags: ["Research", "UX/UI", "Product Design"],
     image: "/images/be-cover.png",
+    link: "/em-construcao",
   },
 ];
 

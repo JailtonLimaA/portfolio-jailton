@@ -103,6 +103,40 @@ section {
 }
 
 /* ========================================
+   BRAND ROLE ANIMATION
+======================================== */
+
+.brand-role {
+  position: relative;
+
+  height: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.brand-role span {
+  display: block;
+
+  white-space: nowrap;
+
+  animation: role-enter 0.5s ease both;
+}
+
+@keyframes role-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
    HEADER
 ======================================== */
 
@@ -495,6 +529,56 @@ section {
   opacity: 0.45;
 }
 
+/* ========================================
+   BUTTON HERO
+======================================== */
+
+.hero-work-link {
+  width: fit-content;
+  margin: 24px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 8px 14px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 999px;
+
+  background: #fff;
+  color: #111;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-work-link:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+.hero-work-arrow {
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.hero-work-link:hover .hero-work-arrow {
+  transform: translateY(2px);
+}
+
 /* pausa quando passar o mouse */
 
 .logo-marquee:hover .logo-track {
@@ -605,6 +689,30 @@ section {
   order: 1;
 }
 
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: fit-content;
+  margin-top: auto;
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+
+  text-decoration: none;
+}
+
+.project-link span {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.project-link:hover span {
+  transform: translateX(5px);
+}
 /* ========================================
    PROJECT CONTENT
 ======================================== */
@@ -807,7 +915,7 @@ section {
 }
 
 .case-content {
-  padding: 24px;
+  padding-left: 24px;
 }
 
 .case-content h3 {
@@ -847,6 +955,31 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.case-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: fit-content;
+  margin-top: 40px;
+
+  color: #111;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+
+  text-decoration: none;
+}
+
+.case-link span {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.case-link:hover span {
+  transform: translateX(5px);
 }
 
 /* ========================================
@@ -1305,6 +1438,16 @@ section {
   font-size: 14px;
 
   color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-form button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.footer-form button:not(:disabled):hover {
+  background: #f4f0ed;
+  color: #111;
 }
 
 /* ========================================
@@ -1948,5 +2091,126 @@ section {
 
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+}
+
+/* ========================================
+  Página de construção
+======================================== */
+
+.construction-image {
+  width: min(720px, 90vw);
+  height: auto;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.construction-page {
+  min-height: 100vh;
+  padding: 40px 64px;
+
+  background: #f4f0ed;
+  color: #111;
+}
+
+.construction-back {
+  display: inline-flex;
+  color: #111;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.construction-content {
+  min-height: calc(100vh - 120px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.construction-gif {
+  width: min(320px, 70vw);
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.construction-label {
+  margin-bottom: 16px;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+}
+
+.construction-content h1 {
+  margin: 0;
+
+  font-family: "Squada One", sans-serif;
+  font-size: clamp(48px, 6vw, 84px);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.construction-content p {
+  max-width: 520px;
+  margin: 24px 0 0;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #555;
+}
+
+.construction-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 32px;
+  padding: 11px 18px;
+
+  border: 1px solid #111;
+  border-radius: 999px;
+
+  color: #111;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.construction-button:hover {
+  background: #111;
+  color: #fff;
+}
+
+.construction-button span {
+  transition: transform 0.25s ease;
+}
+
+.construction-button:hover span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .construction-page {
+    padding: 24px 20px;
+  }
+
+  .construction-content h1 {
+    font-size: 52px;
+  }
+
+  .construction-content p br {
+    display: none;
   }
 }

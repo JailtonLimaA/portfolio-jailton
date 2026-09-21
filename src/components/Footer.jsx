@@ -35,7 +35,13 @@ function Footer() {
               aria-label="Escreva a mensagem"
             />
 
-            <button type="submit">Enviar</button>
+            <button
+              type="submit"
+              disabled={!message.trim()}
+              className="footer-submit"
+            >
+              Enviar
+            </button>
           </form>
         </div>
 

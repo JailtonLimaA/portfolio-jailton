@@ -25,6 +25,11 @@ function ProjectCard({ project, index }) {
                 <span key={tag}>{tag}</span>
               ))}
             </div>
+
+            <a href={project.link} className="project-link">
+              Ver projeto
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
 
           <div className="project-image">

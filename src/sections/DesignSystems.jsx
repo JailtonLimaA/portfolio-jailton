@@ -6,12 +6,12 @@ function DesignSystems() {
   return (
     <section className="dark-section">
       <div className="container">
-        <SectionTitle light>Design System</SectionTitle>
+        <SectionTitle light>Design Systems</SectionTitle>
 
         <Reveal>
           <p className="section-intro light-text">
             Criação e evolução de componentes, padrões e documentação para
-            construir experiências mais consistentes e facilitar a evolução dos
+            garantir consistência, escalabilidade e eficiência na evolução dos
             produtos.
           </p>
         </Reveal>

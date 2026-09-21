@@ -3,13 +3,13 @@
 <rect width="48.7713" height="48.9315" transform="matrix(1 0 5.49011e-05 1 0 0)" fill="url(#pattern0_2529_4048)"/>
 </mask>
 <g mask="url(#mask0_2529_4048)">
-<rect width="48.7713" height="48.9315" transform="matrix(1 0 5.49011e-05 1 0 0)" fill="#969696"/>
+<rect width="48.7713" height="48.9315" transform="matrix(1 0 5.49011e-05 1 0 0)" fill="#41403F"/>
 </g>
 <mask id="mask1_2529_4048" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="58" y="0" width="92" height="49">
 <path d="M145.007 0C145.548 0 146.06 0.126303 146.515 0.350586L150 0.350586V48.9316L58.5498 48.9316L58.5498 0.350586L143.5 0.350586C143.955 0.126486 144.466 2.57492e-05 145.007 0Z" fill="url(#pattern1_2529_4048)"/>
 </mask>
 <g mask="url(#mask1_2529_4048)">
-<rect x="58.3745" y="0.175415" width="91.4503" height="48.5807" fill="#969696"/>
+<rect x="58.3745" y="0.175415" width="91.4503" height="48.5807" fill="#41403F"/>
 </g>
 <defs>
 <pattern id="pattern0_2529_4048" patternContentUnits="objectBoundingBox" width="1" height="1">

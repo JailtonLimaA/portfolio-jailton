@@ -16,9 +16,16 @@ function CaseCard({ item, delay = 0 }) {
               ))}
             </div>
           )}
+
+          {item.link && (
+            <a href={item.link} className="case-link">
+              Ver case
+              <span aria-hidden="true">→</span>
+            </a>
+          )}
         </div>
 
-        <div className="case-image" style={{ objectFit: "cover" }}>
+        <div className="case-image">
           <img src={item.image} alt={item.title} />
         </div>
       </article>

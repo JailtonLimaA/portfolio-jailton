@@ -62,6 +62,10 @@ function Hero() {
                   <img src="/images/jofi.svg" alt="" />
                 </div>
               </div>
+              <a href="#work" className="hero-work-link">
+                <span className="hero-work-arrow">↓</span>
+                <span>Explore meus trabalhos</span>
+              </a>
             </div>
           </div>
         </div>
